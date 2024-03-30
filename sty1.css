@@ -1,0 +1,263 @@
+* {
+    margin: 0px;
+
+}
+
+.head {
+
+    display: flex;
+    border: 2px solid black;
+    width: 100%;
+    /* margin-top: 0px; */
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 60px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+.blck1 {
+
+    /* border:3px solid red; */
+    display: flex;
+    margin: 2px 2px;
+    width: 30%;
+    padding: 10px;
+    align-items: center;
+}
+
+.blck1 img {
+    width: 30%;
+    height: 130%;
+
+}
+
+#cen1 {
+
+    font-weight: bold;
+    font-size: 19px;
+
+}
+
+#cen {
+
+    display: flex;
+    justify-content: center;
+    margin: 2px 2px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+#cen li {
+
+    list-style: none;
+    padding: 5px 5px;
+
+}
+
+#cen :hover {
+
+    color: rgb(255, 100, 224);
+
+}
+
+#cen li a {
+
+    text-decoration: none;
+    color: white;
+}
+
+#cen3 {
+
+    justify-content: center;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+#btn {
+    margin: 2px 20px;
+
+}
+
+#cen3 button:hover {
+
+    background-color: purple;
+    color: cadetblue;
+}
+
+.cn::before {
+    content: "";
+    background-image: url("https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    height: 100vh;
+    opacity: 2;
+}
+
+.cn {
+
+    display: flex;
+    /* border: 2px solid blue; */
+    width: 100%;
+    color: #8e9177;
+    font-weight: bold;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.wt {
+
+    display: flex;
+    border: 6px solid silver;
+    justify-content: space-around;
+    width: 20%;
+    height: 2in;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 2px;
+    z-index: 1;
+    border-radius: 5px 5px;
+    /* background-color: rgb(46, 46, 249); */
+}
+
+.tem {
+    font-size: 17px;
+}
+
+@keyframes imageAnimatio {
+    0% {
+        transform: scale(1) translate(0in, 0in);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.4) translate(2in, 2in);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1) translate(0in, 0in);
+        opacity: 1;
+    }
+}
+
+
+@keyframes imageAnimation {
+    0% {
+        transform: scale(1);
+        /* Initial size */
+        opacity: 1;
+        /* Initial opacity */
+    }
+
+    50% {
+        transform: scale(1.4);
+        /* Slightly larger size */
+        opacity: 0.8;
+        /* Reduced opacity */
+    }
+
+    100% {
+        transform: scale(1);
+        /* Back to initial size */
+        opacity: 1;
+        /* Back to initial opacity */
+    }
+}
+
+
+.wt:hover{
+
+animation: imageAnimatio 3s ease-in-out infinite;
+background-image: url("https://images.unsplash.com/photo-1536183922588-166604504d5e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRhcmslMjB3ZWF0aGVyJTIwaWNvbXN8ZW58MHx8MHx8fDA%3D");
+z-index: 1;
+}
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.ft {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 620px;
+    width: 100%;
+    height: auto;
+    /* display: flex; */
+}
+
+.cnt {
+
+    display: inline-block;
+    /* border: 2px solid gold; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ct {
+
+    /* border: 2px solid greenyellow; */
+    width: 100%;
+
+}
+
+.fa-globe {
+
+    font-size: 20px;
+    padding: 2px 7px;
+    color: seagreen;
+
+}
+
+.fa-globe:hover {
+
+    animation: imageAnimation 1.5s ease-in-out infinite;
+
+}
+
+.fa-square-instagram {
+
+    font-size: 30px;
+    color: pink;
+
+}
+
+.fa-square-instagram:hover {
+
+    color: red;
+
+}
+
+.fa-facebook {
+    font-size: 30px;
+    color: blue;
+
+}
+
+.fa-facebook:hover {
+
+    color: aqua;
+
+}
